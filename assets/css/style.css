@@ -627,6 +627,12 @@ section {
   background-size: 550px;
 }
 
+.about2 .image {
+  background: url("../img/serena.bmp") center center no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-size: 550px;
+}
 
 /*--------------------------------------------------------------
 # Counteri

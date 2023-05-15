@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Ikone -->
-  <link href="assets/img/sport.jpg" rel="icon">
-  <link href="assets/img/sport.jpg" rel="apple-touch-icon">
+  <link href="assets/img/sport_icon.png" rel="icon">
+  <link href="assets/img/sport_icon.png" rel="apple-touch-icon">
 
   <!-- Google Fontovi -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -36,23 +36,16 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      
-      
-
+    <div class="container d-flex align-items-center justify-content-center">
       <nav id="navbar" class="navbar">
         <ul>
   
           <li><p class="text-center">
-            <h1><p class="text-success">Nogomet</p></h1>
+            <h1><p class="text-success">Omiljeni sport</p></h1>
           </p></li>
-          <img src="assets/img/football.png" class="img-fluid" alt="" style="padding-left: 20px; height: 60px;">
-          <li><a class="nav-link scrollto active" href="#hero">Početna</a></li>
-          <li><a class="nav-link scrollto" href="#about">Općenito</a></li>
-          <li><a class="nav-link scrollto" href="#team">Formacije</a></li>
-          <li><a class="nav-link scrollto" href="#why-us">Hrvatska</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Europske lige</a></li>
+          <img src="assets/img/sport.png" class="img-fluid" alt="" style="padding-left: 20px; height: 60px;">
+          <li><a class="nav-link scrollto" href="#about">Nogomet</a></li>
+          <li><a class="nav-link scrollto" href="#about2">Tenis</a></li>
           <li class="dropdown"><a href="#"><span>Drugi izbor</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="Rukomet/rukomet.html">Rukomet (Josip)</a></li>
@@ -62,16 +55,16 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- Kraj Header-a -->
+  
 
   <!-- ======= Carousel sekcija ======= -->
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
         
         <div class="carousel-inner" role="listbox">
 
@@ -82,23 +75,74 @@
                 <video class="video-fluid" autoplay loop muted style="height: 1550px;">
                   <source src="uefavideo.mp4" type="video/mp4">
               </video>
-
-              
               <div class="d-flex align-items-center justify-content-center">
               <h2 class="carousel-caption animate__animated animate__fadeInDown" style="bottom: 150px;">Nogomet</h2>
               <p class="carousel-caption animate__animated animate__fadeInUp" style="bottom: 100px;">Najpopularniji sport na svijetu ili „najvažnija sporedna stvar na svijetu“. Počeo se igrati u Engleskoj u 19. stoljeću, a najviše ga obožavaju Europljani i Južnoamerikanci. </p>
-            
+            </div> 
+            </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item position-relative">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <video class="video-fluid" autoplay loop muted style="height: 1550px;">
+                  <source src="tennisvideo.mp4" type="video/mp4">
+              </video>
+              <div class="d-flex align-items-center justify-content-center">
+              <h2 class="carousel-caption animate__animated animate__fadeInDown" style="bottom: 150px;">Tenis</h2>
+              <p class="carousel-caption animate__animated animate__fadeInUp" style="bottom: 100px;">Sport u kojem se pomoću reketa i loptice dva ili četiri igrača nadmeću na označenom terenu. Osim što je vrlo raširen vid rekreacije tenis je i popularan sport, koji je standardno i u programima Olimpijskih igara. </p>
             </div> 
             </div>
             </div>
           </div>
 
         </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
       </div>
     </div>
   </section><!-- Kraj carousel sekcije -->
 
   <main id="main">
+
+  <style>
+    div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: black;
+      padding: 0px;
+      z-index: 999;
+    }
+  </style>
+
+  <div class="sticky">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <img src="assets/img/football.png" class="img-fluid" alt="" style="padding-left: 20px; height: 50px;">
+          <li><p class="text-center">
+            <h1><p class="text-success">Nogomet</p></h1>
+          </p></li>
+          <li><a class="nav-link scrollto" href="#about">Općenito</a></li>
+          <li><a class="nav-link scrollto" href="#team">Formacije</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Hrvatska</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Europske lige</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </div>
 
     <!-- ======= Općenito Sekcija ======= -->
     <section id="about" class="about">
@@ -169,7 +213,7 @@
     <div class="d-flex align-items-center justify-content-center">
         <div class="container" style="padding-top: 60px; padding-bottom: 30px;">
     
-            <h4 style="font-size: 1.1vw;">Pravila</h4>
+            <h4>Pravila</h4>
             <p>Sedamnaest je zasebnih pravila opisanih u tančine u IFAB-ovom službenom pravilniku. Njima je uređen gotovo svaki detalj nogometne igre, od igraće opreme do načina nastavka igre nakon prekida. </p>
            
             <div class="row">
@@ -185,15 +229,15 @@
             
           <div class="row">
     <div class="col-sm-8">
-    <img src="assets/img/igralište.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;">
+    <img src="assets/img/igralište.bmp" class="img-fluid" alt="" style="width: 100%; height: auto;">
     </div>
     <div class="col-sm-4">
     <table style="height: 400px;">
     <tbody>
       <tr>
         <td class="align-middle">
-        <h4 style="font-size: 1.1vw;">Igralište</h4>
-        <p style="font-size: 0.8vw;">Mjesto odigravanja utakmice prirodna je ili umjetna travnata površina različitih mjera. Poprišta međunarodnih utakmica duljine su 100 - 110 m, a širine 64 - 75 m.</p></td>
+        <h4>Igralište</h4>
+        <p>Mjesto odigravanja utakmice prirodna je ili umjetna travnata površina različitih mjera. Poprišta međunarodnih utakmica duljine su 100 - 110 m, a širine 64 - 75 m.</p></td>
       </tr>
     </tbody>
   </table>
@@ -206,14 +250,14 @@
     <tbody>
       <tr>
         <td class="align-middle">
-        <h4 style="font-size: 1.1vw;">Oprema</h4>
-        <p style="font-size: 0.8vw;">Nogometna igra zahtijeva od svih igrača nošenje pet predmeta: majice kratkih ili dugih rukava, kratkih hlača, štitnika za potkoljenice („kostobrana”), dugih čarapa („štucni”) i obuće.</p></td>
+        <h4>Oprema</h4>
+        <p>Nogometna igra zahtijeva od svih igrača nošenje pet predmeta: majice kratkih ili dugih rukava, kratkih hlača, štitnika za potkoljenice („kostobrana”), dugih čarapa („štucni”) i obuće.</p></td>
       </tr>
     </tbody>
   </table>
     </div>
     <div class="col-sm-8">
-    <img src="assets/img/oprema.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;">
+    <img src="assets/img/oprema.bmp" class="img-fluid" alt="" style="width: 100%; height: auto;">
     </div>
   </div>
   
@@ -226,8 +270,8 @@
     <tbody>
       <tr>
         <td class="align-middle">
-        <h4 style="font-size: 1.1vw;">Sastav</h4>
-        <p style="font-size: 0.8vw;">Momčad čine vratar, desetorica igrača „u polju” i zamjene.  Moguće je napraviti do tri zamjene po sastavu za vrijeme svake službene natjecateljske utakmice, 
+        <h4>Sastav</h4>
+        <p>Momčad čine vratar, desetorica igrača „u polju” i zamjene.  Moguće je napraviti do tri zamjene po sastavu za vrijeme svake službene natjecateljske utakmice, 
           šest u prijateljskim ogledima reprezentacija, ali još i više u klupskim pripremnim utakmicama. Momčad je predvođena kapetanom u svakom trenutku utakmice.</p></td>
       </tr>
     </tbody>
@@ -241,8 +285,8 @@
     <tbody>
       <tr>
         <td class="align-middle">
-        <h4 style="font-size: 1.1vw;">Suđenje</h4>
-        <p style="font-size: 0.8vw;">Glavni sudac utakmice zadužen je za provedbu svih pravila u djelo. U tome naumu pomažu mu dva linijska suca smještena iza aut-linija, 
+        <h4>Suđenje</h4>
+        <p>Glavni sudac utakmice zadužen je za provedbu svih pravila u djelo. U tome naumu pomažu mu dva linijska suca smještena iza aut-linija, 
           čiji su prioriteti pokazivanje zaleđa i prelaska lopte izvan granica mahanjem zastavicom.</p></td>
       </tr>
     </tbody>
@@ -262,8 +306,8 @@
     <tbody>
       <tr>
         <td class="align-middle">
-        <h4 style="font-size: 1.1vw;">Prekršaji</h4>
-        <p style="font-size: 0.8vw;">Momčad koja pretrpi prekršaj izvodi slobodni udarac (izravni ili neizravni) s „mjesta zločina” ili jedanaesterac ako je prekršaj izboren u protivničkom kaznenom prostoru. 
+        <h4>Prekršaji</h4>
+        <p>Momčad koja pretrpi prekršaj izvodi slobodni udarac (izravni ili neizravni) s „mjesta zločina” ili jedanaesterac ako je prekršaj izboren u protivničkom kaznenom prostoru. 
           Sudac može opomenuti žutim ili isključiti crvenim kartonom bilo kojeg igrača na terenu ili zamjenu na klupi.</p></td>
       </tr>
     </tbody>
@@ -625,7 +669,7 @@
 
 
    <!-- ======= Counteri Sekcija ======= -->
-   <div class="container" style="padding-bottom: 30px;">
+   <div class="container" id="kontejner" style="padding-bottom: 30px;">
     <h4 style="font-size: 1.1vw;">Zanimljivosti</h4>
    </div>
    <section id="counts" class="counts">
@@ -663,6 +707,277 @@
 
     </div>
   </section><!-- Kraj Counteri Sekcije -->
+
+   <style>
+    div.sticky2 {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: black;
+      padding: 0px;
+      z-index: 999;
+    }
+  </style>
+
+  <div class="sticky2" id="about">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <img src="assets/img/tennis.png" class="img-fluid" alt="" style="padding-left: 20px; height: 50px;">
+          <li><p class="text-center">
+            <h1><p class="text-success">Tenis</p></h1>
+          </p></li>
+          <li><a class="nav-link scrollto" href="#about2">Općenito</a></li>
+          <li><a class="nav-link scrollto" href="#why-us2">Hrvatska</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </div>
+
+   <!--TENIS-->
+
+  <!-- ======= Carousel sekcija ======= -->
+  <style>
+    div.video_background{
+      background-color: darkgrey;
+      font-weight: bold;
+      font-size: large;
+      
+    }
+  </style>
+  <div class="video_background">
+  <div class="d-flex align-items-center justify-content-center">
+    <video class="video-fluid" autoplay loop muted style="height: 850px;">
+      <source src="tenisvideo.mp4" type="video/mp4">
+    </video>
+  </div>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-center" style="padding-top: 20px;">
+  <h2>Tenis</h2>
+  </div>
+  <div class="d-flex align-items-center justify-content-center" style="padding-top: 20px;">
+  <p>Jedan od najomiljenijih sportova, tenis se prakticira diljem svijeta i u svim dobnim skupinama.</p> 
+  </div>
+  <div class="d-flex align-items-center justify-content-center">
+  <p>Ova elegantna igra, koja je započela kao društvena zabava u 19. stoljeću, brzo je evoluirala u globalni fenomen.</p>
+  </div>
+     <!-- Kraj carousel sekcije -->
+
+
+   <!-- ======= Općenito Sekcija ======= -->
+   <section id="about2" class="about2">
+    <div class="container">
+
+      <div class="row no-gutters">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+        <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+          <div class="content d-flex flex-column justify-content-center">
+            <h3>Općenito o tenisu</h3>
+            <div class="row">
+              <div class="text col-xl-10" style="padding-top: 15px; padding-left: 15px">
+                <p>Tenis je individualni sport u kojem se igrači natječu jedan protiv drugoga na terenu. </p>
+                  <p>Cilj igre je prebaciti lopticu reketom preko mreže u protivnikovu polovicu terena tako da protivnik ne uspije vratiti lopticu unutar granica terena.</p>
+                  
+                  <p>Tenis je poznat po brzim udarcima, preciznosti i taktici, što zahtijeva veliku fizičku izdržljivost i mentalnu oštrinu igrača.</p>
+              </div>
+             
+            
+            </div>
+          </div><!-- Kraj .content-->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- Kraj Sekcije Općenito -->
+
+
+
+  <div class="d-flex align-items-center justify-content-center">
+      <div class="container" style="padding-top: 60px; padding-bottom: 30px;">
+  
+          <h4>Pravila</h4>
+          
+          <div class="row">
+            <div class="col-sm-2">
+          <img src="assets/img/tennis_wimbledon_2022.jpg_242310155.jpg" class="img-fluid" alt="" >
+            </div>
+            <div class="col-sm-10">
+              <p>Pravila tenisa reguliraju igru između dva ili četiri igrača koji udaraju lopticu preko mreže s ciljem da je protivnik ne uspije vrati unutar granica terena.
+                Igrači serviraju izvan svog dvorišta koristeći jedan ili dva pokušaja, a servis mora preći mrežu i pasti unutar protivnikovog dvorišta.
+                Nakon servisa, igrači udaraju lopticu izmjenujući se, a loptica mora preći mrežu i dotaknuti podlogu unutar granica terena.
+                Ako protivnik ne uspije vratiti lopticu unutar granica terena ili preko mreže, igrač osvaja bod.
+                Igrač koji osvoji prvi šest gemova s barem dva gema prednosti osvaja set, a za pobjedu u meču potrebno je osvojiti većinu setova (obično tri od pet setova ili dva od tri seta, ovisno o natjecanju). </p>
+             
+              <p>Ostatak toga dokumenta odnosi se na tumačenje svakog pravila iz sudačkog kuta. Neobične, pravilnikom nepredviđene situacije riješavaju se nepisanim pravilom, zdravom logikom.</p>
+
+            </div>
+          </div><br><br>
+          
+        <div class="row">
+  <div class="col-sm-8">
+  <img src="assets/img/court.bmp" class="img-fluid" alt="" style="width: 100%; height: auto;">
+  </div>
+  <div class="col-sm-4">
+  <table style="height: 400px;">
+  <tbody>
+    <tr>
+      <td class="align-middle">
+      <h4>Igralište</h4>
+      <p>Teniski teren je pravokutno oblikovano igralište podijeljeno na pola mrežom, s odvojenim dvorištima za svakog igrača ili par igrača.
+        Terenska površina može biti tvrda (poput betona ili sintetičke podloge), zemljana (sloj šljunka) ili travnata, a granice terena su označene bojama ili linijama.
+        Dimenzije standardnog teniskog terena za pojedinačnu igru su 23,77 metara duljine i 8,23 metara širine. Za igru parova, širina teniskog terena je nešto veća i iznosi 10,97 metara.</p></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+  <table style="height: 400px;">
+  <tbody>
+    <tr>
+      <td class="align-middle">
+      <h4>Oprema</h4>
+      <p>Tenis može igrati bilo tko, bilo gdje, ali mora imati osnovnu opremu. To su teniski reket, teniska loptica i mreža. Reketi dolaze u raznim veličinama i težinama od kojih
+         igrač bira vrstu reketa koja njemu osobno najviše odgovara. Razlikujemo tri glavne vrste loptica koje se koriste ovisno o podlozi na kojoj se igra. 
+      </p></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  <div class="col-sm-8">
+  <img src="assets/img/tenis_oprema.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+  <img src="assets/img/parovi.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;">
+  </div>
+  <div class="col-sm-4">
+  <table style="height: 400px;">
+  <tbody>
+    <tr>
+      <td class="align-middle">
+      <h4>Igrači</h4>
+      <p>Tenis se može igrati individualno između dva pojedinca, muškarci ili žene, ili dva para, muški, ženski ili mješoviti.</p></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+  <table style="height: 400px;">
+  <tbody>
+    <tr>
+      <td class="align-middle">
+      <h4>Suđenje</h4>
+      <p>U teniskoj igri, obično je prisutan jedan glavni sudac koji nadgleda cjelokupni meč. Osim toga, na višim razinama natjecanja, kao što su Grand Slam turniri,
+         mogu biti prisutni i linijski suci koji odlučuju o tome je li loptica pala unutar granica terena ili izvan njih. </p></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  <div class="col-sm-8">
+  <img src="assets/img/sudac_tennis.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-8">
+  <img src="assets/img/racket.jpg" class="img-fluid" alt="" style="width: 100%; height: auto;">
+  </div>
+  <div class="col-sm-4">
+  <table style="height: 400px;">
+  <tbody>
+    <tr>
+      <td class="align-middle">
+      <h4>Prekršaji</h4>
+      <p>Prekršaji u teniskoj igri obuhvaćaju kršenje pravila kao što su udaranje loptice izvan granica terena, nepravilan servis, dodirivanje mreže tijekom igre ili 
+        nepoštivanje vremenskog ograničenja između poena. Ti prekršaji mogu rezultirati gubitkom poena, kaznama ili čak diskvalifikacijom igrača.</p></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<!-- ======= Tenis u Hrvatskoj Sekcija ======= -->
+<section id="why-us2" class="why-us">
+  <div class="container" style="padding-bottom: 24px;">
+
+    <div class="section-title">
+      <h2>Tenis u Hrvatskoj</h2>
+      <p>Hrvatski tenis ima bogatu povijest i brojne uspjehe na međunarodnoj sceni.
+        Neki od najpoznatijih hrvatskih tenisača uključuju Gorana Ivaniševića, Ivana Ljubičića, Marija Ančića i Marina Čilića, koji su postigli izuzetne rezultate na Grand Slam turnirima.
+        Hrvatska je također bila domaćin Davis Cupa 2005. godine, kada je osvojena titula i postala svjetski prvak u tenisu.</p>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center" style="padding-bottom: 15px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7-12nmtlhn4" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="d-flex align-items-center justify-content-center" style="padding-bottom: 15px;">
+    <p>Meč poen kojim je Goran Ivanišević postao prvi hrvatski tenisač koji je osvojio Grand Slam turnir</p>
+  </div>
+
+    <div class="row">
+   
+    <div class="col-lg-12 mt-4 mt-lg-0">
+    <a class="nav-link" href="https://hts.hr/prije-20-godina-slavio-se-goranov-wimbledon/">
+        <div class="box" style="height: 420px;">
+           <span>Wimbledon 2001.</span>
+          <h4>Prvo mjesto</h4>
+          <h6>Goran Ivanišević</h6>
+          <p>Osvojenim prvim mjestom na Wimbledonu, Ivanišević donosi prvu hrvatsku pobjedu na Grand Slam turniru.</p>
+          <div class="d-flex align-items-center justify-content-end">
+            <img src="ivanisevic.png" class="img-fluid" alt="" style="height: 300px;">
+          </div>
+        </div>
+      </div>
+    </a>
+
+    
+      <div class="col-lg-12 mt-4 mt-lg-0">
+      <a class="nav-link" href="https://hts.hr/jedna-od-najvecih-hrvatskih-pobjeda/">
+        <div class="box" style="height: 420px;">
+           <span>Davis Cup 2005.</span>
+          <h4>Prvo mjesto</h4>
+          <h6>Mario Ančić, Goran Ivanišević, Ivo Karlović i Ivan Ljubičić</h6>
+          <p>Hrvatska reprezentacija osvojila naslov prvaka u dramatičnom finalu protiv Slovačke.</p>
+          <div class="d-flex align-items-center justify-content-end">
+            <img src="repka.png" class="img-fluid" alt="" style="height: 400px;">
+          </div>
+        </div>
+      </div>
+      </a>
+
+      <div class="col-lg-12 mt-4 mt-lg-0">
+      <a class="nav-link" href="https://hts.hr/marin-%C4%8Dili%C4%87-pobjednik-us-opena-goran-i-ja-nismo-se-brijali-cijeli-turnir/">
+        <div class="box" style="height: 420px;">
+           <span>US Open 2014.</span>
+          <h4>Prvo mjesto</h4>
+          <h6>Marin Čilić</h6>
+          <p>Značajan uspjeh za hrvatski tenis osvojenim prvim mjestom na US Openu. Također, Čilić je 2017. ušao u finale Wimbledona.</p>
+          <div class="d-flex align-items-center justify-content-end">
+            <img src="cilic.png" class="img-fluid" alt="" style="height: 300px;">
+        </div>
+      </div>
+      </a>
+
+    </div>
+  
+
+  </div>
+</section><!-- Kraj Sekcije Tenis u Hrvatskoj -->
 
 
     <!-- ======= Podatci o studentima Sekcija ======= -->
